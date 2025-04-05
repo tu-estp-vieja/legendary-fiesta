@@ -1,0 +1,75 @@
+body {
+  font-family: 'Arial', sans-serif; /* Fuente más formal */
+  background: linear-gradient(to right, #a2c2e2 0%, #b6d8c9 100%); /* Colores pasteles masculinos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombras suaves */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #3e6d91; /* Un azul suave */
+}
+
+#birthday-message {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: #2a4d6d; /* Un azul oscuro */
+}
+
+button {
+  background-color: #3e6d91; /* Azul pastel */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2a4d6d; /* Azul oscuro */
+}
+
+#surprise {
+  margin-top: 2rem;
+}
+
+#surprise img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 🎊 Estilos del confeti */
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #86c6d1; /* Color pastel azul */
+  border-radius: 50%;
+  animation: fall linear infinite;
+  z-index: 1000;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
